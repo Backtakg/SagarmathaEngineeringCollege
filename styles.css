@@ -183,3 +183,8 @@ html{scroll-padding-top:calc(var(--utility-bar-height) + 100px)}
 @media(max-width:900px){.sisterline{grid-template-columns:1fr}.sisterbrand{grid-template-columns:130px minmax(0,1fr) auto}}
 @media(max-width:560px){.sisterbrand{grid-template-columns:104px minmax(0,1fr);gap:14px;padding:17px;min-height:126px}.sisterlogo-wrap{height:76px}.sistercopy b{font-size:13px}.sistercopy small{font-size:8px}.sisterbrand i{grid-column:2;justify-self:start;margin-top:-8px;font-size:8px}}
 @media(max-width:360px){.sisterbrand{grid-template-columns:84px minmax(0,1fr);gap:11px;padding:14px}.sisterlogo-wrap{height:68px}}
+
+
+.snc-logo-wrap{background:#f5f8fc}
+.snc-official-mark{width:70px;height:70px;display:grid;place-items:center;border-radius:50%;color:#fff;background:linear-gradient(145deg,#4c9dd2,#164b86);font:800 54px/1 var(--display);letter-spacing:-.1em;text-shadow:2px 2px 0 #a9d9f3}
+.snc-wordmark{font:700 25px/1.1 Georgia,serif!important;letter-spacing:-.06em!important;color:#1b5b92!important}
