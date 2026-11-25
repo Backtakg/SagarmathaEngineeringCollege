@@ -48,3 +48,53 @@ footer{background:#062d3a}.foot{display:grid;grid-template-columns:1.2fr 1fr 1fr
 @media(max-width:430px){.brand-logo{width:190px;max-height:43px}.sisterbrand i{display:none}}
 
 .alumni-initials{display:grid;place-items:center;background:linear-gradient(145deg,#0b6874,#052f3d);color:#d7f0f1;font:800 54px var(--display);letter-spacing:-.06em}
+
+
+/* Rounded, image-led campus refresh */
+:root{--radius-card:22px}
+.program,.programphoto,.aboutvisual,.photo-grid,.event,.notice,.quote,.alumnigrid>a,.whygrid a,.videothumb,.sisterbrand,.campus-shot,.journey,.hero{border-radius:22px}
+.program{border:1px solid #e4ebec}
+.programphoto{height:280px;background-size:cover;background-position:center}
+.programphoto span,.alumni-no,.whygrid a>span{display:none!important}
+.pcomp{background-image:linear-gradient(0deg,#073f5040,#073f5008),url('https://sagarmatha.edu.np/wp-content/uploads/2022/07/program3.jpeg')}
+.pcivil{background-image:linear-gradient(0deg,#073f5040,#073f5008),url('https://sagarmatha.edu.np/wp-content/uploads/2022/07/program11.jpeg')}
+.pelec{background-image:linear-gradient(0deg,#073f5040,#073f5008),url('https://sagarmatha.edu.np/wp-content/uploads/2022/07/program21.jpeg')}
+.hero{background-image:linear-gradient(90deg,rgba(3,37,49,.90) 0%,rgba(4,51,65,.70) 42%,rgba(5,55,68,.12) 100%),url('https://sagarmatha.edu.np/wp-content/uploads/2024/05/s-1-e1716270269487.jpg');background-position:center,center 54%;background-size:cover;overflow:hidden;margin:0 18px}
+.hero:after{display:none}
+.hero:before{opacity:.22}
+.alumnigrid>a{padding:0 0 24px;overflow:hidden;border-radius:22px;background:#fff;border:1px solid var(--line)}
+.alumni-photo{width:100%;height:260px;margin:0 0 18px;object-fit:cover;object-position:center center;border-radius:22px 22px 0 0;background:#e8f0f1}
+.alumnigrid>a>small,.alumnigrid>a>h3,.alumnigrid>a>p,.alumnigrid>a>b,.alumnigrid>a>label{margin-left:22px;margin-right:22px}
+.alumnigrid>a>small{display:block}
+.alumnigrid>a>h3{margin-top:8px}
+.alumnigrid>a>p{margin-top:8px}
+.alumnigrid>a>label{display:block}
+.alumni-initials{display:grid;place-items:center;font-size:54px}
+.campus-life{background:var(--paper)}
+.campus-gallery{display:grid;grid-template-columns:1.35fr 1fr 1fr;grid-template-rows:240px 240px;gap:16px}
+.campus-shot{position:relative;display:block;overflow:hidden;min-width:0;background:#dce8e9;border-radius:20px}
+.campus-shot-large{grid-row:span 2}
+.campus-shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .45s}
+.campus-shot:hover img{transform:scale(1.045)}
+.campus-shot:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(3,37,49,.78))}
+.campus-shot span{position:absolute;z-index:1;left:20px;bottom:17px;color:#fff;font:700 14px var(--display);letter-spacing:.01em}
+.aboutvisual{border-radius:24px;overflow:hidden}
+.photo-grid{border-radius:16px}
+.video .videothumb{border-radius:24px}
+.sisterbrand{border-radius:18px}
+.btn,.outline,.navcta{border-radius:999px}
+.dropmenu{border-radius:14px}
+.event,.notice{border-radius:12px;padding-left:12px;padding-right:12px}
+@media(max-width:760px){
+ .hero{margin:0 10px;min-height:590px;background-position:center,62% center}
+ .hero:before{mask-image:none}
+ .campus-gallery{grid-template-columns:1fr 1fr;grid-template-rows:230px 190px 190px}
+ .campus-shot-large{grid-column:1/-1;grid-row:auto}
+ .alumni-photo{height:240px}
+}
+@media(max-width:430px){
+ .hero{margin:0 8px;min-height:540px;background-position:center,65% center}
+ .campus-gallery{grid-template-columns:1fr;grid-template-rows:250px 210px 210px 210px}
+ .campus-shot-large{grid-column:auto}
+ .programphoto{height:245px}
+}
