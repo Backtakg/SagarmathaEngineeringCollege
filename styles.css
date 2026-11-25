@@ -98,3 +98,34 @@ footer{background:#062d3a}.foot{display:grid;grid-template-columns:1.2fr 1fr 1fr
  .campus-shot-large{grid-column:auto}
  .programphoto{height:245px}
 }
+
+
+/* Final mobile hero sizing and consistent rounded UI */
+:root{--radius-card:22px}
+.btn,.outline,.navcta,button,.menu{border-radius:999px}
+.program,.programphoto,.aboutvisual,.photo-grid,.event,.notice,.quote,
+.alumnigrid>a,.whygrid a,.videothumb,.sisterbrand,.campus-shot,
+.journey,.journeyinner,.stat,.statitem,.testimonial,.video-card,
+.whycard,.updatecard,.noticecard{border-radius:22px;overflow:hidden}
+.programphoto,.campus-shot,.videothumb{overflow:hidden}
+@media(max-width:760px){
+ .hero{min-height:clamp(390px,68svh,500px);height:auto;margin:0 10px;border-radius:20px;background-size:cover;background-position:center,68% center}
+ .heroinner{padding:64px 0}
+ .hero h1{font-size:clamp(44px,11vw,66px);max-width:100%;line-height:1.02}
+ .hero-sub{font-size:clamp(18px,4.8vw,23px);max-width:92%;margin:18px 0 26px}
+ .hero-note{margin-top:32px}
+ .hero-side{display:none}
+ .campus-shot img{object-position:center}
+ .campus-gallery{gap:12px}
+}
+@media(max-width:430px){
+ .hero{min-height:410px;height: min(72svh,470px);background-position:center,70% center}
+ .heroinner{padding:48px 0}
+ .hero h1{font-size:clamp(40px,10.5vw,52px)}
+ .hero-sub{font-size:17px}
+ .actions{gap:9px}
+ .btn,.outline{min-height:44px;padding:12px 17px;font-size:9px}
+ .programphoto{height:220px}
+ .alumni-photo{height:210px;object-fit:cover;object-position:center 30%}
+ .campus-shot{border-radius:18px}
+}
