@@ -19,3 +19,30 @@ footer{background:#062d3a}.foot{display:grid;grid-template-columns:1.2fr 1fr 1fr
 @media(max-width:760px){.wrap{width:calc(100% - 38px)}.top .wrap>span:first-child{display:none}.top .wrap{justify-content:flex-end}.top a{margin-left:17px}.menu{display:block;background:none;border:0;font-size:25px;color:var(--navy);cursor:pointer}.nav{height:72px}.nav nav{display:none;position:absolute;top:72px;left:0;right:0;background:white;padding:16px 22px 22px;box-shadow:0 16px 24px #052f3d20;align-items:stretch;flex-direction:column;gap:3px;max-height:calc(100vh - 72px);overflow:auto}.nav nav.open{display:flex}.nav nav>a:not(.navcta),.dropdown>a{display:block;padding:11px 0;font-size:13px}.navcta{margin-top:8px;text-align:center}.dropdown{width:100%}.dropmenu{display:none;position:static;box-shadow:none;border:0;border-left:2px solid var(--cyan);border-radius:0;background:#f5f9f9;margin:4px 0 8px 4px;padding:5px 10px;min-width:0}.dropdown:focus-within .dropmenu,.dropdown:hover .dropmenu{display:block}.dropmenu a{font-size:12px;padding:10px}.hero{min-height:560px}.hero:after{right:-32%;width:85vw}.heroinner{padding:70px 0}.hero h1{font-size:clamp(50px,12vw,72px)}.hero-note{margin-top:42px;max-width:280px;line-height:1.7}.hero-side{display:none}.section{padding:72px 0}.center{margin-bottom:36px}.programgrid{grid-template-columns:1fr;gap:18px}.programphoto{height:240px}.programtext{min-height:0;padding:23px}.programtext h3{min-height:0;font-size:21px;margin-bottom:17px}.split,.about .split,.updategrid,.videogrid{grid-template-columns:1fr;gap:34px}.aboutvisual{max-width:580px}.photo-grid{height:330px}.updates{padding-top:70px;padding-bottom:74px}.sectionhead{align-items:flex-end;flex-direction:row}.sectionhead h2{font-size:32px}.numbergrid{grid-template-columns:repeat(2,1fr);gap:26px 0}.numbergrid>div:nth-child(2){border:0}.numbergrid b{font-size:38px}.quote{padding:35px 24px}.quote blockquote{font-size:15px;line-height:1.8}.alumnigrid{grid-template-columns:repeat(2,1fr);gap:12px}.alumnigrid>a{min-height:265px;padding:22px 18px}.whygrid{grid-template-columns:1fr 1fr;gap:12px;margin-top:30px}.whygrid a,.whygrid a:nth-child(4){grid-column:auto;padding:22px}.whygrid a:last-child{grid-column:1/-1}.videothumb{height:250px}.journeyinner{align-items:flex-start;flex-direction:column}.foot{grid-template-columns:1fr 1fr;padding:48px 0;gap:30px 22px}.footbottom{flex-direction:column;gap:8px}}
 @media(max-width:430px){.wrap{width:calc(100% - 32px)}.top{font-size:10px}.hero{min-height:520px}.hero h1{font-size:49px}.hero-sub{font-size:19px}.hero-note{margin-top:35px}.section{padding:62px 0}.center h2{font-size:31px}.sectionhead{align-items:flex-start;flex-direction:column;gap:10px}.numbergrid{gap:22px 8px}.numbergrid b{font-size:34px}.numbergrid span{font-size:10px}.alumnigrid{grid-template-columns:1fr}.alumnigrid>a{min-height:0}.whygrid{grid-template-columns:1fr}.whygrid a:last-child{grid-column:auto}.photo-grid{height:285px}.quote{padding:30px 19px}.studentlinks{gap:16px}.foot{grid-template-columns:1fr 1fr}.foot>div:first-child{grid-column:1/-1}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+
+/* Official college photography and identity */
+.brand-logo{display:block;width:clamp(220px,24vw,315px);height:auto;max-height:62px;object-fit:contain;object-position:left center}
+.hero{background-image:linear-gradient(90deg,rgba(3,37,49,.94) 0%,rgba(4,51,65,.82) 48%,rgba(5,55,68,.42) 100%),url('https://sagarmatha.edu.np/wp-content/uploads/2025/11/slid3-scaled.jpg');background-position:center,center 48%;background-size:cover}
+.hero:before{background-image:linear-gradient(#ffffff12 1px,transparent 1px),linear-gradient(90deg,#ffffff12 1px,transparent 1px)}
+.pcomp{background-image:linear-gradient(0deg,#073f5070,#073f5010),url('https://sagarmatha.edu.np/wp-content/uploads/2022/07/program3.jpeg')}
+.pcivil{background-image:linear-gradient(0deg,#073f5070,#073f5010),url('https://sagarmatha.edu.np/wp-content/uploads/2022/07/program11.jpeg')}
+.pelec{background-image:linear-gradient(0deg,#073f5070,#073f5010),url('https://sagarmatha.edu.np/wp-content/uploads/2022/07/program21.jpeg')}
+.ph1{background-image:url('https://sagarmatha.edu.np/wp-content/uploads/2025/11/slid3-scaled.jpg')}
+.ph2{background-image:url('https://sagarmatha.edu.np/wp-content/uploads/2022/07/program21.jpeg')}
+.ph3{background-image:url('https://sagarmatha.edu.np/wp-content/uploads/2022/07/program11.jpeg')}
+.alumnigrid>a{padding-top:0;overflow:hidden}
+.alumni-photo{display:block;width:calc(100% + 44px);height:190px;margin:0 -22px 22px;object-fit:cover;object-position:center 25%;background:#e8f0f1}
+.alumni-no{margin-bottom:10px}
+.sisterline{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.sisterbrand{display:flex;align-items:center;gap:15px;padding:22px 24px;background:#fff;border:1px solid var(--line);min-width:0;transition:transform .2s,box-shadow .2s}
+.sisterbrand:hover{transform:translateY(-3px);box-shadow:0 12px 28px #0a3c4a12}
+.sistermark{width:54px;height:54px;display:grid;place-items:center;flex:0 0 54px;border-radius:50%;font:800 31px var(--display);color:white}
+.scstmark{background:linear-gradient(145deg,#7aa94a,#246b42)}
+.sncmark{background:linear-gradient(145deg,#e5ad4b,#9d5728)}
+.sisterbrand b,.sisterbrand small{display:block}
+.sisterbrand b{font:800 14px var(--display);letter-spacing:.12em;color:var(--navy)}
+.sisterbrand small{font-size:9px;letter-spacing:.1em;color:var(--muted);margin-top:3px}
+.sisterbrand i{font-style:normal;font-size:9px;letter-spacing:.08em;color:var(--teal);margin-left:auto;white-space:nowrap}
+@media(max-width:760px){.brand-logo{width:220px;max-height:48px}.hero{background-position:center,58% center}.alumni-photo{width:calc(100% + 36px);margin-left:-18px;margin-right:-18px;height:210px}.sisterline{grid-template-columns:1fr}.sisterbrand{padding:18px}}
+@media(max-width:430px){.brand-logo{width:190px;max-height:43px}.sisterbrand i{display:none}}
