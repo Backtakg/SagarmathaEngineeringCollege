@@ -149,20 +149,17 @@ html{scroll-padding-top:calc(var(--utility-bar-height) + 100px)}
 }
 
 
-/* Hero: use the supplied Sagarmatha Engineering College building photo */
+/* Hero campus photograph: use the official SEC homepage image asset */
 .hero{
   background-image:
-    linear-gradient(90deg,rgba(3,37,49,.78) 0%,rgba(4,51,65,.58) 48%,rgba(5,55,68,.18) 100%),
-    url('https://sagarmatha.edu.np/wp-content/uploads/2024/05/s-1-e1716270269487.jpg') !important;
+    linear-gradient(90deg,rgba(3,37,49,.82) 0%,rgba(4,51,65,.64) 48%,rgba(5,55,68,.25) 100%),
+    url('https://sagarmatha.edu.np/wp-content/uploads/2025/11/slid3-scaled.jpg') !important;
   background-repeat:no-repeat;
   background-size:cover;
-  background-position:center,center 52%;
+  background-position:center,center 48%;
 }
 @media(max-width:760px){
   .hero{
-    background-image:
-      linear-gradient(90deg,rgba(3,37,49,.78) 0%,rgba(4,51,65,.52) 65%,rgba(5,55,68,.20) 100%),
-      url('https://sagarmatha.edu.np/wp-content/uploads/2024/05/s-1-e1716270269487.jpg') !important;
     background-position:center,62% center;
     background-size:cover;
   }
