@@ -147,3 +147,26 @@ html{scroll-padding-top:calc(var(--utility-bar-height) + 100px)}
  .nav nav{top:72px;max-height:calc(100dvh - var(--utility-bar-height) - 72px)}
  html{scroll-padding-top:calc(var(--utility-bar-height) + 84px)}
 }
+
+
+/* Hero: use the supplied Sagarmatha Engineering College building photo */
+.hero{
+  background-image:
+    linear-gradient(90deg,rgba(3,37,49,.78) 0%,rgba(4,51,65,.58) 48%,rgba(5,55,68,.18) 100%),
+    url('https://sagarmatha.edu.np/wp-content/uploads/2024/05/s-1-e1716270269487.jpg') !important;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center,center 52%;
+}
+@media(max-width:760px){
+  .hero{
+    background-image:
+      linear-gradient(90deg,rgba(3,37,49,.78) 0%,rgba(4,51,65,.52) 65%,rgba(5,55,68,.20) 100%),
+      url('https://sagarmatha.edu.np/wp-content/uploads/2024/05/s-1-e1716270269487.jpg') !important;
+    background-position:center,62% center;
+    background-size:cover;
+  }
+}
+@media(max-width:430px){
+  .hero{background-position:center,65% center}
+}
