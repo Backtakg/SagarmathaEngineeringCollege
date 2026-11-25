@@ -129,3 +129,21 @@ footer{background:#062d3a}.foot{display:grid;grid-template-columns:1.2fr 1fr 1fr
  .alumni-photo{height:210px;object-fit:cover;object-position:center 30%}
  .campus-shot{border-radius:18px}
 }
+
+
+/* Keep the utility strip and main navigation pinned while scrolling */
+:root{--utility-bar-height:34px}
+body{padding-top:calc(var(--utility-bar-height) + 88px)}
+.top{position:fixed;top:0;left:0;right:0;z-index:42;height:var(--utility-bar-height);background:var(--navy);color:#e4f0f2}
+.top .wrap{height:100%;display:flex;align-items:center;justify-content:space-between}
+.top a{color:inherit}
+header{position:fixed!important;top:var(--utility-bar-height);left:0;right:0;width:100%;z-index:41;background:rgba(255,255,255,.98);box-shadow:0 5px 20px #052f3d12}
+html{scroll-padding-top:calc(var(--utility-bar-height) + 100px)}
+@media(max-width:760px){
+ :root{--utility-bar-height:32px}
+ body{padding-top:calc(var(--utility-bar-height) + 72px)}
+ .top{font-size:10px}
+ .nav{height:72px}
+ .nav nav{top:72px;max-height:calc(100dvh - var(--utility-bar-height) - 72px)}
+ html{scroll-padding-top:calc(var(--utility-bar-height) + 84px)}
+}
